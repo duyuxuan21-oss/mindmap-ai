@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Mindmap</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>AI Mindmap</h1>
+    <form id="mindmap-form">
+      <label for="topic">Topic</label>
+      <input id="topic" name="topic" placeholder="Enter a topic..." required />
+
+      <label for="depth">Depth</label>
+      <input id="depth" name="depth" type="number" value="3" min="1" max="8" />
+
+      <button type="submit">Generate</button>
+    </form>
+
+    <div id="status" class="status"></div>
+    <div id="tree" class="tree"></div>
+  </main>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
